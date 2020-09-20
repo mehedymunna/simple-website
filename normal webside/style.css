@@ -1,0 +1,224 @@
+*{padding:0;margin:0;}
+.full_div{text-align:center;}
+.menu{background:#82ccdd;}
+nav.container {
+	height: 65px;
+    background: #82ccdd;
+
+}
+#check{display:none;}
+label #open_btn,#close_btn{
+	color:white;
+	font-size:30px;
+	float:right;
+	line-height:65px;
+	margin-right:15px;
+	cursor:pointer;
+	display:none;
+}
+.logo{    float: left;
+    background: #82ccdd;
+    font-size: 20px;
+    line-height: 63px;
+    padding: 0px 33px;}
+.main_menu{display:flex;background:#82ccdd;justify-content:flex-end;margin-right: 25px;flex-wrap:wrap;list-style:none;}
+.main_menu li{position:relative;margin: 0px 10px;} 
+.main_menu li a{text-decoration:none;color:blue;font-size:18px;line-height:65px;display:block;transition:background 1s;}
+.main_menu li:hover .dropdownMenu{top:65px;visibility: visible;}
+.main_menu li a:before{
+	position:absolute;
+	content:'';
+	left:0;
+	bottom:15px;
+	height:3.5px;
+	width:100%;
+	background:white;
+	transform:scaleX(0);
+	transform-origin:right;
+	transition:transform 0.2s linear;
+}
+.main_menu li a:hover:before{
+	transform:scaleX(1);
+	transform-origin:left;	
+}
+.dropdownMenu{     top: 100px;
+	
+	list-style:none;
+    display: block;
+    width:150px;
+    z-index: 1;
+    position: absolute;
+    background: blue;
+  
+    transition: .5s ease;
+    visibility: hidden;
+ }
+ .dropdownMenu li {position:relative;border-bottom:1px solid green;}
+ .dropdownMenu li a{color:white;}
+ .dropdownMenu li a:hover{text-decoration:none;}
+ .secondDropDown{width: 150px;
+    left: 152px;
+    position: absolute;
+    z-index: 1;
+    background: blue;
+    bottom: -120px;
+	list-style:none;
+	transition:all .75s;
+	transform-origin:left;
+	transform:scaleX(0);
+	}
+	 .dropdownMenu li:hover .secondDropDown{transform:scaleX(1);}
+.banner{margin-bottom:-5px!important;}
+img{max-width:100%;}
+.content{background:#079992;}
+.content h1{color:white;padding:5px 0;}
+.content p{padding:0 10px;line-height:25px;font-size:17px;}
+.footer_top{background:#b71540;}
+footer {
+	background:background:#b71540 ;
+	color: white;
+	line-height: 40px;
+	font-size: 16px;
+	overflow: hidden;
+}
+
+.mainfooterdiv {
+	margin-top: 25px;
+	overflow:hidden;
+}
+
+.first-box {
+	width: 27%;
+	float: left;
+	margin-left: 40px;
+}
+
+.second-box {
+	width: 27%;
+	float: left;
+	margin-left: 40px;
+}
+
+.third-box {
+	width: 28%;
+	float: left;
+	line-height: 30px;
+	background: #030303;
+	margin-left: 40px;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+
+.commentBox {
+	padding: 30px;
+}
+
+.text {
+	width: 100%;
+	height: 35px;
+	border-radius: 5px;
+	border: none;
+	font-size: 16px;
+	padding-left: 10px;
+}
+
+#button {
+	margin-top: 20%;
+	margin-left: 75%;
+	background: none repeat scroll 0% 0% rgb(12, 219, 243);
+	padding: 5px;
+	border: none;
+	border-radius: 2px;
+	color: rgba(0, 0, 0, 0.84);
+	outline:none;
+}
+
+.paragraph p {
+	border-bottom: 1px solid rgba(246, 232, 232, 0.7);
+	color: rgba(249, 243, 243, 0.61);
+}
+
+.paragraph p a {
+	color: rgba(249, 243, 243, 0.61);
+	text-decoration: none;
+	transition: all 0.3s;
+}
+
+.paragraph p a:hover {
+	color: white;
+}
+
+.commentBox p a {
+	text-decoration: none;
+	color: white;
+}
+
+.contect {
+	overflow: hidden;
+	border-bottom: 3px solid white;
+}
+
+.spriteIcon {
+	width: 150px;
+	overflow: hidden;
+	list-style: none;
+	margin: auto;
+}
+
+.spriteIcon li {
+	float: left;
+	padding: 10px 5px;
+}
+
+.facebook {
+	background-image: url(picture/download.png);
+	width: 39px;
+	height: 39px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: -32px -66px;
+	border-radius: 50%;
+	transition: all 1s;
+}
+
+.facebook:hover {
+	background-position: -32px -19px;
+}
+
+.twitter {
+	background-image: url(picture/download.png);
+	width: 39px;
+	height: 39px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: -285px -66px;
+	border-radius: 50%;
+	transition: all 1s;
+}
+
+.twitter:hover {
+	background-position: -285px -19px;
+}
+
+.in {
+	background-image: url(picture/download.png);
+	width: 39px;
+	height: 39px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: -116px -66px;
+	border-radius: 50%;
+	transition: all 1s;
+}
+
+.in:hover {
+	background-position: -116px -19px;
+}
+
+.footer_bottom{    
+	background: #e55039;
+    margin-top: 45px;
+    text-align: center;}
+.padding1{padding:20px 0px;}
+.padding2{padding:10px 0px;}
+.padding_r_l{padding:10px 10px;}
